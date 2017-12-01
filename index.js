@@ -126,8 +126,12 @@ function createRock(x) {
 function endGame() {
 //  cancelAnimationFrame(createRock());
 //
-
+  var rockLength = document.getElementById("game").getElementsByClassName("rock").length
+  var rocks = document.getElementById("game").getElementsByClassName("rock")
   clearInterval(gameInterval);
+  for (var i = 0; i < rockLength; i++) {
+    rocks[i].shift();
+  }
   while (game.hasChildren(div.rock)) {
     GAME.removeChild(rock);
   }
