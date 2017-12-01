@@ -136,10 +136,8 @@ function endGame() {
   var rocks = document.getElementById("game").getElementsByClassName("rock")
    debugger
   for (var i = 0; i < ROCKS.length; i++) {
-    if (rocks[i].className == "rock") {
       rocks[i].parentNode.removeChild(rocks[i]);
-      ROCKS[i].remove();
-    }
+      ROCKS.pop();
   }
 
 
