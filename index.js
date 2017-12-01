@@ -100,6 +100,7 @@ function createRock(x) {
               */
                 if (top = GAME_HEIGHT) {
                   ROCKS.shift();
+                  GAME.removeChild(rock);
                 }
               }
           }
