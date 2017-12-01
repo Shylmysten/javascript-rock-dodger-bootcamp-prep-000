@@ -138,6 +138,8 @@ function endGame() {
     if (rocks[i].className == "rock") { debugger
       rocks[i].parentNode.removeChild(rocks[i]);
     }
+    if (ROCKS.length)
+    ROCKS.pop();
   }
 
   window.alert("YOU LOSE!");
