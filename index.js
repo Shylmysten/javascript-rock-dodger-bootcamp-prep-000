@@ -135,9 +135,9 @@ function endGame() {
   var rockLength = document.getElementById("game").getElementsByClassName("rock").length
   var rocks = document.getElementById("game").getElementsByClassName("rock")
   for (var i = 0; ROCKS.length; i++) {
-    
+
       ROCKS[i].remove();
-    
+
   }
 
 
