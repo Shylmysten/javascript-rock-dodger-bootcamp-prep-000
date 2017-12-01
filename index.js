@@ -100,7 +100,6 @@ function createRock(x) {
               */
                 if (top = GAME_HEIGHT) {
                   ROCKS.shift();
-                  GAME.removeChild(rock);
                 }
               }
           }
@@ -129,9 +128,10 @@ function endGame() {
 //
 
   clearInterval(gameInterval);
-  for (var i = ROCKS.length; i >= 0; i--) {
-    ROCKS.pop();
-  } debugger
+  while (#game.rock) {
+    GAME.removeChild(rock);
+  }
+  
   window.removeEventListener('keydown', moveDodger);
 }
 
