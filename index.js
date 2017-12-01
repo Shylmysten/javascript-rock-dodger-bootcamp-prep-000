@@ -131,7 +131,7 @@ function endGame() {
   clearInterval(gameInterval);
   for (var i = ROCKS.length; i >= 0; i--) {
     ROCKS.pop();
-  }
+  } debugger
   window.removeEventListener('keydown', moveDodger);
 }
 
