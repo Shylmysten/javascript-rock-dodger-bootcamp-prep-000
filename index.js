@@ -138,7 +138,7 @@ function endGame() {
     if (rocks[i].className == "rock") { debugger
       rocks[i].parentNode.removeChild(rocks[i]);
     }
-    if (ROCKS.length >= 0)
+    if (ROCKS !== undefined)
     ROCKS.pop();
   }
 
