@@ -130,7 +130,7 @@ function endGame() {
 
   clearInterval(gameInterval);
   for (var i = ROCKS.length; i >= 0; i--) {
-    ROCKS.pop();
+    #game[i].pop();
   }
   window.removeEventListener('keydown', moveDodger);
 }
