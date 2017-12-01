@@ -128,7 +128,7 @@ function endGame() {
 //
 
   clearInterval(gameInterval);
-  while (game.hasChildren(rock)) {
+  while (game.hasChildren(.rock)) {
     GAME.removeChild(rock);
   }
 
