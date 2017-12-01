@@ -153,7 +153,7 @@ function moveDodger(e) {
   if (e.which === RIGHT_ARROW) {
       moveDodgerRight();
   }
-}, passive: true, capture: true );
+}, true, true );
 }
 
 function moveDodgerLeft() {
