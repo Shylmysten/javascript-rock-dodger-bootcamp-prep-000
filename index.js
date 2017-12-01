@@ -134,8 +134,8 @@ function endGame() {
   var rocks = document.getElementById("game").getElementsByClassName("rock")
   for (var i = 0; i < rockLength; i++) { debugger
     if (rocks[i].className == "rock") {
-      rocks[i].game.removeChild(rocks[i]);
-    } 
+      rocks[i].parentNode.removeChild(rocks[i]);
+    }
   }
 }
 
