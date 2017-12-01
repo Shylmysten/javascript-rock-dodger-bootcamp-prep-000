@@ -135,6 +135,7 @@ function endGame() {
   for (var i = 0; i < rockLength; i++) { debugger
     if (rocks[i].className == "rock") {
       rocks[i].parentNode.removeChild(rocks[i]);
+      ROCKS[i].parentNode.removeChild(ROCKS[i]);
     }
   }
 }
