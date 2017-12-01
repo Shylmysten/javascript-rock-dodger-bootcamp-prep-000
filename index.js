@@ -134,7 +134,7 @@ function endGame() {
 
   var rockLength = document.getElementById("game").getElementsByClassName("rock").length
   var rocks = document.getElementById("game").getElementsByClassName("rock")
-   debugger
+
   for (var i = 0; i < ROCKS.length; i++) {
       rocks[i].parentNode.removeChild(rocks[i]);
       ROCKS.pop();
