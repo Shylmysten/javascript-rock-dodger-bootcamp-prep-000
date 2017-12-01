@@ -134,12 +134,13 @@ function endGame() {
 
   var rockLength = document.getElementById("game").getElementsByClassName("rock").length
   var rocks = document.getElementById("game").getElementsByClassName("rock")
+  if (ROCKS !== undefined) {
+  ROCKS.pop();
+}
   for (var i = 0; i < rockLength; i++) {
     if (rocks[i].className == "rock") { debugger
       rocks[i].parentNode.removeChild(rocks[i]);
     }
-    if (ROCKS !== undefined)
-    ROCKS.pop();
   }
 
   window.alert("YOU LOSE!");
