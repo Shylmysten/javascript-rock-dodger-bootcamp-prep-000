@@ -155,7 +155,7 @@ function moveDodger(e) {
 
       moveDodgerRight();
   }
-}, true, true );
+}, false, false );
 }
 
 function moveDodgerLeft() {
