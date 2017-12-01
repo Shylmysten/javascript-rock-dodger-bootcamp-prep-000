@@ -137,8 +137,8 @@ function endGame() {
   var rocks = document.getElementById("game").getElementsByClassName("rock")
   let ROCKS = rocks
   for (var i = 0; i < rockLength; i++) {
-    if (rocks[i].className == "rock") {
-      rocks[i].parentNode.removeChild(rocks[i]);
+    if (ROCKS[i].className == "rock") {
+      ROCKS[i].parentNode.removeChild(ROCKS[i]);
     }
   }
 
