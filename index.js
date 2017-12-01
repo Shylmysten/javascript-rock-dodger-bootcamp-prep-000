@@ -130,7 +130,8 @@ function endGame() {
   var rocks = document.getElementById("game").getElementsByClassName("rock")
   clearInterval(gameInterval);
   for (var i = 0; i < rockLength; i++) {
-    rocks[i].removeChild(rock);
+    delete ROCKS[i];
+    ROCKS.shift();
   }
 
 
