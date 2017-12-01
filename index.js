@@ -134,10 +134,11 @@ function endGame() {
 
   var rockLength = document.getElementById("game").getElementsByClassName("rock").length
   var rocks = document.getElementById("game").getElementsByClassName("rock")
-  for (var i = 0; ROCKS.length; i++) {
-
+  for (var i = 0; i < ROCKS.length; i++) {
+    if (rocks[i].className == "rock") { debugger
+      rocks[i].parentNode.removeChild(rocks[i]);
       ROCKS[i].remove();
-
+    }
   }
 
 
