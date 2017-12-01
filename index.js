@@ -135,8 +135,6 @@ function endGame() {
       rocks[i].removeChild(rocks[i]);
     }
   }
-
-
   window.removeEventListener('keydown', moveDodger);
 }
 
