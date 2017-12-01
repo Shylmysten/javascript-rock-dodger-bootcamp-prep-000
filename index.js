@@ -128,10 +128,10 @@ function endGame() {
 //
 
   clearInterval(gameInterval);
-  while (#game.rock) {
+  while (game.hasChildren(rock)) {
     GAME.removeChild(rock);
   }
-  
+
   window.removeEventListener('keydown', moveDodger);
 }
 
