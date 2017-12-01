@@ -137,6 +137,7 @@ function endGame() {
       rocks[i].parentNode.removeChild(rocks[i]);
     }
   }
+  window.alert("YOU LOSE!");
 }
 
 function moveDodger(e) {
