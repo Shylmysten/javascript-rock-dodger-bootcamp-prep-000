@@ -153,7 +153,7 @@ function moveDodger(e) {
   if (e.which === RIGHT_ARROW) {
       moveDodgerRight();
   }
-}, Modernizr.passiveeventlisteners ? {passive: true} : false) );
+}, {passive: true} : false) );
 }
 
 function moveDodgerLeft() {
