@@ -132,8 +132,8 @@ function endGame() {
 
   window.removeEventListener('keydown', moveDodger);
 
-  var rockLength = document.getElementById("game").getElementsByClassName("rock").length
-  var rocks = document.getElementById("game").getElementsByClassName("rock")
+//  var rockLength = document.getElementById("game").getElementsByClassName("rock").length
+//  var rocks = document.getElementById("game").getElementsByClassName("rock")
 
   for (var i = 0; i < ROCKS.length; i++) {
 //      rocks[i].parentNode.removeChild(rocks[i]);
